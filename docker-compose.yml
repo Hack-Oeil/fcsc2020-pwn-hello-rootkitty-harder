@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  webssh.cyrhades.com:
+    build: webssh
+    ports:
+      - "80:8888"
+  hello-rootkitty-harder.cyrhades.com:
+    image: anssi/fcsc2020-pwn-hello-rootkitty-harder:latest
+    ports:
+      - "2222:22"
